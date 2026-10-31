@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>Lab | Israel Allen</title>
+<meta name="description" content="Two images redrawn live in text characters, and a crystal you can turn and reshape.">
+<link rel="canonical" href="https://lukeanthony.co/lab.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lab | Israel Allen">
+<meta property="og:description" content="Two images redrawn live in text characters, and a crystal you can turn and reshape.">
+<meta property="og:url" content="https://lukeanthony.co/lab.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#e6e3de" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#020c06" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/theme-boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="bar">
+  <a class="brand" href="index.html">◆ israel allen</a>
+  <nav aria-label="Pages">
+    <a href="about.html">about</a>
+    <a href="work.html">work</a>
+    <a href="lab.html" aria-current="page">lab</a>
+    <a href="contact.html">contact</a>
+  </nav>
+  <button class="theme" id="theme" type="button" aria-label="Switch light or dark theme">light / dark</button>
+</div>
+
+<main id="main">
+<section class="sec first" aria-labelledby="h-lab">
+  <div class="inner">
+    <h1 class="page-h" id="h-lab">Lab</h1>
+    <p class="lead">The engine that draws the rest of this site, pointed at two images I keep coming back to. Move across an image to look through the text at the original.</p>
+  </div>
+</section>
+
+<section class="spec" aria-labelledby="h-thermal">
+  <div class="inner">
+    <div class="spec-head">
+      <h2 id="h-thermal">Heat map</h2>
+      <p>A crowd on a crossing in thermal colors, with its detection boxes. Brighter heat becomes denser characters.</p>
+    </div>
+    <div class="view" id="v-thermal">
+      <canvas role="img" aria-label="The thermal crowd image redrawn in colored text characters"></canvas>
+      <img class="fallback" src="assets/img/thermal-street.jpg" width="735" height="919" alt="A crowd crossing a striped street, seen from above in thermal colors: red bodies with cyan halos on a dark road, several people framed by yellow detection boxes labelled PERSON_01XY to PERSON_07XX.">
+      <p class="vmsg" hidden></p>
+    </div>
+    <div class="ctl" role="group" aria-label="Heat map view" data-for="v-thermal">
+      <button type="button" data-mode="text" aria-pressed="true">Text</button>
+      <button type="button" data-mode="source" aria-pressed="false">Original</button>
+    </div>
+    <!-- CREDIT: once you know who made this image, credit them here with a link. See ASSETS.md. -->
+  </div>
+</section>
+
+<section class="spec" aria-labelledby="h-portrait">
+  <div class="inner">
+    <div class="spec-head">
+      <h2 id="h-portrait">Ghost portrait</h2>
+      <p>A pixelated portrait printed three times in offset colors. White counts as empty paper here, so the palest face fades out.</p>
+    </div>
+    <div class="view" id="v-portrait">
+      <canvas role="img" aria-label="The pixelated triple portrait redrawn in colored text characters"></canvas>
+      <img class="fallback" src="assets/img/pixel-portrait.jpg" width="735" height="981" alt="A pixelated portrait of one person’s head and shoulders, repeated three times in offset color layers: yellow and orange on the left, magenta and blue in the middle, cyan and white on the right.">
+      <p class="vmsg" hidden></p>
+    </div>
+    <div class="ctl" role="group" aria-label="Ghost portrait view" data-for="v-portrait">
+      <button type="button" data-mode="text" aria-pressed="true">Text</button>
+      <button type="button" data-mode="source" aria-pressed="false">Original</button>
+    </div>
+    <!-- CREDIT: once you know who made this image, credit them here with a link. See ASSETS.md. -->
+  </div>
+</section>
+
+<section class="spec" aria-labelledby="h-crystal">
+  <div class="inner">
+    <div class="spec-head">
+      <h2 id="h-crystal">The crystal, up close</h2>
+      <p>The quartz point from the home page. Drag it to turn it, or change how many sides it has.</p>
+    </div>
+    <div class="view clear" id="v-crystal">
+      <canvas class="glyph" tabindex="0" role="img" aria-label="A quartz crystal drawn in text characters. Drag, or use the left and right arrow keys, to turn it."></canvas>
+    </div>
+    <div class="ctl">
+      <label class="range" for="sides">Sides <input id="sides" type="range" min="3" max="12" step="1" value="6"> <output id="sides-out" for="sides">6</output></label>
+      <button type="button" id="spin" aria-pressed="true">Spin</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><p>© 2026 Israel Allen. Drawn with text. No cookies, no tracking.</p></footer>
+
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/glyph.js" defer></script>
+<script src="assets/js/lab.js" defer></script>
+</body>
+</html>
