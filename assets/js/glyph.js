@@ -1,4 +1,4 @@
-/* glyph.js: the shared text-drawing engine for lukeanthony.co.
+/* glyph.js: the shared text-drawing engine for v2.lukeanthony.co.
    The GlyphScreen engine and palettes are taken unchanged from
    ghost-in-the-grid-v2.html. The crystal below is new. */
 (function(){

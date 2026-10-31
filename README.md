@@ -1,4 +1,4 @@
-# lukeanthony.co
+# v2.lukeanthony.co
 
 Israel Allen’s personal site. Plain HTML, CSS and JavaScript. No build step, no libraries, no trackers.
 
@@ -12,7 +12,7 @@ Israel Allen’s personal site. Plain HTML, CSS and JavaScript. No build step, n
 | `lab.html` | Two images redrawn in text, and the crystal up close |
 | `contact.html` | Email, GitHub, LinkedIn, the reaching hands and a message box |
 | `404.html` | Shown automatically by GitHub Pages for missing pages |
-| `CNAME` | Tells GitHub Pages to serve the site at lukeanthony.co |
+| `CNAME` | Tells GitHub Pages to serve the site at v2.lukeanthony.co |
 | `assets/css/site.css` | All styles. Colors are at the top. |
 | `assets/js/glyph.js` | The text-drawing engine shared by every drawing |
 | `assets/js/*.js` | One small script per page |
@@ -33,8 +33,8 @@ Then open http://localhost:8000. Press Ctrl+C in the terminal to stop it.
 1. On GitHub, create a new **public** repository named exactly `izzyallen876.github.io`. Leave “Add a README” unticked.
 2. On the empty repository page, click **uploading an existing file**. Open this folder, select everything inside it (not the folder itself), drag it all in, then click **Commit changes**.
 3. Go to **Settings → Pages**. Under “Build and deployment”, set Source to **Deploy from a branch**, Branch to **main** and the folder to **/ (root)**, then click **Save**. After a minute or two the site is live at https://izzyallen876.github.io.
-4. Still on **Settings → Pages**, type `lukeanthony.co` under **Custom domain** and click **Save**. Do this before the DNS step. GitHub warns that adding DNS records first can let someone else claim your domain.
-5. In Cloudflare, open lukeanthony.co → **DNS → Records** and add these. Set each one to **DNS only** (grey cloud), so GitHub can issue your HTTPS certificate.
+4. Still on **Settings → Pages**, type `v2.lukeanthony.co` under **Custom domain** and click **Save**. Do this before the DNS step. GitHub warns that adding DNS records first can let someone else claim your domain.
+5. In Cloudflare, open v2.lukeanthony.co → **DNS → Records** and add these. Set each one to **DNS only** (grey cloud), so GitHub can issue your HTTPS certificate.
 
    | Type | Name | Content |
    |---|---|---|
